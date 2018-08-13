@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundApp"
+    tools:context="com.chemer.andrii.homeaccountacy.main.event.EventActivity">
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_event"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_margin="5dp"
+        android:paddingStart="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_below="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorDarkGrey"/>
+
+    <TextView
+        android:id="@+id/title_category"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_category"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/category_spinner"
+        android:layout_below="@+id/title_category"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
+
+
+    <TextView
+        android:id="@+id/title_select_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_spinner"
+        android:text="@string/select_type"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_below="@+id/title_select_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_consumption"
+            android:checked="true"
+            android:textSize="18dp"
+            android:buttonTint="@color/colorLightBlue"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_income"
+            android:textSize="18dp"
+            android:buttonTint="@color/colorLightBlue"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/title_input_amount"
+        android:layout_below="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:text="@string/input_amount"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/input_amount_edit_text"
+        android:layout_below="@+id/title_input_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/title_input_description"
+        android:layout_below="@+id/input_amount_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:text="@string/input_description"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/input_description_edit_text"
+        android:layout_below="@+id/title_input_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_added"
+        android:background="@color/colorLightBlue"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeAccountacy</string>
+
+    <!--Event-->
+    <string name="add_event">Добавить событие</string>
+    <string name="select_category">Выберите категорию</string>
+    <string name="select_type">Выберите тип</string>
+    <string name="input_amount">Введите сумму</string>
+    <string name="input_description">Введите описание</string>
+    <string name="btn_added">Добавить</string>
+    <string name="label_income">Доход</string>
+    <string name="label_consumption">Рассход</string>
+</resources>

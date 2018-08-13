@@ -1,0 +1,3 @@
+https://github.com/PhilJay/MPAndroidChart/wiki/Getting-Started - графики
+
+https://github.com/jakob-grabner/Circle-Progress-View - Progress view
